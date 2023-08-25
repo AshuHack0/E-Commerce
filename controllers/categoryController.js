@@ -1,9 +1,10 @@
 import CategoryModel from "../models/CategoryModel.js";
 import slugify from "slugify";
-export const createCategoryController = async(req, res) => {
+export const createCategoryController = async(req, res) => { 
+     // hellow 
     try {
         const { name } = req.body;
-        if (!name) {
+        if (!name) { 
             return res.status(401).send({ message: "Name is required" })
         }
 
